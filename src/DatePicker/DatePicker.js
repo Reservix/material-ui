@@ -193,7 +193,7 @@ class DatePicker extends Component {
       }, this.refs.dialogWindow.show);
     } else {
       this.setState({
-        dialogDate: new Date(),
+        dialogDate: this.props.defaultDate || new Date(),
       }, this.refs.dialogWindow.show);
     }
   }
